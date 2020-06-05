@@ -1,3 +1,5 @@
+{% load static %}
+
 <div class="header-area header-sticky only-mobile-sticky">
         <div class="container">
             <div class="row">
@@ -5,8 +7,8 @@
                     <div class="header position-relative">
                         <!-- brand logo -->
                         <div class="header__logo top-logo">
-                            <a href="index.html">
-                                <img src="static/images/logo/thetimes_logo.png" class="img-fluid" alt="">
+                            <a href="http://127.0.0.1:8000/">
+                                <img src='{% static "images/logo/thetimes_logo.png" %}' class="img-fluid" alt="">
                             </a>
                         </div>
 
@@ -135,8 +137,7 @@
                                                     <li class="has-children">
                                                         <a href="#"><span>About us</span></a>
                                                         <ul class="submenu">
-                                                            <li><a href="#"><span>About us 01</span></a></li>
-                                                            <li><a href="#"><span>About us 02</span></a></li>
+                                                            <li><a href="about-us"><span>About Us</span></a></li>
                                                             <li class="has-children">
                                                                 <a href="#"><span>Submenu Level Two</span></a>
                                                                 <ul class="submenu">

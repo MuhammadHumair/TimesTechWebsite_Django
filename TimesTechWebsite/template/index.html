@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -8,30 +10,22 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="icon" href="static/images/thetimes_favicon.png">
+    <link rel="icon" href='{% static "images/thetimes_favicon.png" %}'>
 
     <!-- CSS
         ============================================ -->
 
-    <link rel="stylesheet" href="static/css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="static/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href='{% static "css/vendor/vendor.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/plugins/plugins.min.css" %}'>
 
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href='{% static "css/style.css" %}'>
 
 </head>
 
 <body>
 
-    <div class="preloader-activate preloader-active open_tm_preloader">
-        <div class="preloader-area-wrap">
-            <div class="spinner d-flex justify-content-center align-items-center h-100">
-                <div class="bounce1"></div>
-                <div class="bounce2"></div>
-                <div class="bounce3"></div>
-            </div>
-        </div>
-    </div>
+    {% include 'preloader.html' %}
 
     <!--====================  header area ====================-->
     {% include 'header.html' %}
@@ -275,7 +269,7 @@
                     <div class="col-lg-12">
                         <div class="section-title-wrapper text-center section-space--mb_60 wow move-up">
                             <h6 class="section-sub-title mb-20">discover our company</h6>
-                            <h3 class="section-title">We’ve been thriving in<span class="text-color-primary"> 38 years</span> </h3>
+                            <h3 class="section-title">We’ve been thriving in<span class="text-color-primary"> 15 years</span> </h3>
                         </div>
                     </div>
                 </div>
@@ -308,7 +302,7 @@
                                             <div class="tab-history-image video-popup mt-30">
                                                 <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="video-link">
                                                     <div class="single-popup-wrap">
-                                                        <img class="img-fluid" src="static/images/bg/home-processing-video-intro-slider-slide-01-image-01-570x350.jpg" alt="">
+                                                        <img class="img-fluid" src='{% static "images/bg/home-processing-video-intro-slider-slide-01-image-01-570x350.jpg" %}' alt="">
                                                         <div class="ht-popup-video video-button">
                                                             <div class="video-mark">
                                                                 <div class="wave-pulse wave-pulse-1"></div>
@@ -355,7 +349,7 @@
                                                     <div class="large-image-box">
                                                         <div class="box-image">
                                                             <div class="default-image">
-                                                                <img class="img-fluid" src="static/images/box-image/blog-01-480x298.jpg" alt="">
+                                                                <img class="img-fluid" src='{% static "images/box-image/blog-01-480x298.jpg" %}' alt="">
                                                             </div>
                                                         </div>
                                                         <div class="content">
@@ -377,7 +371,7 @@
                                                     <div class="large-image-box">
                                                         <div class="box-image">
                                                             <div class="default-image">
-                                                                <img class="img-fluid" src="static/images/box-image/mitech-home-infotechno-box-large-image-03-480x298.jpg" alt="">
+                                                                <img class="img-fluid" src='{% static "images/box-image/mitech-home-infotechno-box-large-image-03-480x298.jpg" %}' alt="">
                                                             </div>
                                                         </div>
                                                         <div class="content">
@@ -399,7 +393,7 @@
                                                     <div class="large-image-box">
                                                         <div class="box-image">
                                                             <div class="default-image">
-                                                                <img class="img-fluid" src="static/images/box-image/mitech-home-infotechno-box-large-image-02-480x298.jpg" alt="">
+                                                                <img class="img-fluid" src='{% static "images/box-image/mitech-home-infotechno-box-large-image-02-480x298.jpg" %}' alt="">
                                                             </div>
                                                         </div>
                                                         <div class="content">
@@ -429,90 +423,90 @@
                                             <div class="brand-logo brand-logo--slider">
                                                 <a href="#">
                                                     <div class="brand-logo__image">
-                                                        <img src="static/images/brand/mitech-client-logo-01.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-01.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                     <div class="brand-logo__image-hover">
-                                                        <img src="static/images/brand/mitech-client-logo-01-hover.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-01-hover.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="brand-logo brand-logo--slider">
                                                 <a href="#">
                                                     <div class="brand-logo__image">
-                                                        <img src="static/images/brand/mitech-client-logo-02.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-02.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                     <div class="brand-logo__image-hover">
-                                                        <img src="static/images/brand/mitech-client-logo-02-hover.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-02-hover.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="brand-logo brand-logo--slider">
                                                 <a href="#">
                                                     <div class="brand-logo__image">
-                                                        <img src="static/images/brand/mitech-client-logo-03.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-03.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                     <div class="brand-logo__image-hover">
-                                                        <img src="static/images/brand/mitech-client-logo-03-hover.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-03-hover.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="brand-logo brand-logo--slider">
                                                 <a href="#">
                                                     <div class="brand-logo__image">
-                                                        <img src="static/images/brand/mitech-client-logo-04.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-04.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                     <div class="brand-logo__image-hover">
-                                                        <img src="static/images/brand/mitech-client-logo-04-hover.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-04-hover.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="brand-logo brand-logo--slider">
                                                 <a href="#">
                                                     <div class="brand-logo__image">
-                                                        <img src="static/images/brand/mitech-client-logo-05.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-05.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                     <div class="brand-logo__image-hover">
-                                                        <img src="static/images/brand/mitech-client-logo-05-hover.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-05-hover.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="brand-logo brand-logo--slider">
                                                 <a href="#">
                                                     <div class="brand-logo__image">
-                                                        <img src="static/images/brand/mitech-client-logo-06.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-06.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                     <div class="brand-logo__image-hover">
-                                                        <img src="static/images/brand/mitech-client-logo-06-hover.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-06-hover.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="brand-logo brand-logo--slider">
                                                 <a href="#">
                                                     <div class="brand-logo__image">
-                                                        <img src="static/images/brand/mitech-client-logo-07.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-07.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                     <div class="brand-logo__image-hover">
-                                                        <img src="static/images/brand/mitech-client-logo-07-hover.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-07-hover.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="brand-logo brand-logo--slider">
                                                 <a href="#">
                                                     <div class="brand-logo__image">
-                                                        <img src="static/images/brand/mitech-client-logo-08.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-08.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                     <div class="brand-logo__image-hover">
-                                                        <img src="static/images/brand/mitech-client-logo-08-hover.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-08-hover.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="brand-logo brand-logo--slider">
                                                 <a href="#">
                                                     <div class="brand-logo__image">
-                                                        <img src="static/images/brand/mitech-client-logo-09.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-09.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                     <div class="brand-logo__image-hover">
-                                                        <img src="static/images/brand/mitech-client-logo-09-hover.png" class="img-fluid" alt="">
+                                                        <img src='{% static "images/brand/mitech-client-logo-09-hover.png" %}' class="img-fluid" alt="">
                                                     </div>
                                                 </a>
                                             </div>
@@ -529,7 +523,7 @@
                                                     <div class="image-box-wrap">
                                                         <div class="box-image">
                                                             <div class="image">
-                                                                <img src="static/images/award/mitech-company-award-01-161x110.jpg" alt="">
+                                                                <img src='{% static "images/award/mitech-company-award-01-161x110.jpg" %}' alt="">
                                                             </div>
                                                         </div>
                                                         <div class="content">
@@ -544,7 +538,7 @@
                                                     <div class="image-box-wrap">
                                                         <div class="box-image">
                                                             <div class="image">
-                                                                <img src="static/images/award/mitech-company-award-02-161x116.jpg" alt="">
+                                                                <img src='{% static "images/award/mitech-company-award-02-161x116.jpg" %}' alt="">
                                                             </div>
                                                         </div>
                                                         <div class="content">
@@ -559,7 +553,7 @@
                                                     <div class="image-box-wrap">
                                                         <div class="box-image">
                                                             <div class="image">
-                                                                <img src="static/images/award/mitech-company-award-03-161x112.jpg" alt="">
+                                                                <img src='{% static "images/award/mitech-company-award-03-161x112.jpg" %}' alt="">
                                                             </div>
                                                         </div>
                                                         <div class="content">
@@ -574,7 +568,7 @@
                                                     <div class="image-box-wrap">
                                                         <div class="box-image">
                                                             <div class="image">
-                                                                <img src="static/images/award/mitech-company-award-04-161x109.jpg" alt="">
+                                                                <img src='{% static "images/award/mitech-company-award-04-161x109.jpg" %}' alt="">
                                                             </div>
                                                         </div>
                                                         <div class="content">
@@ -617,7 +611,7 @@
                                     <div class="grid-item">
                                         <div class="ht-team-member">
                                             <div class="team-image">
-                                                <img class="img-fluid" src="static/images/team/team-member-01-370x250.jpg" alt="">
+                                                <img class="img-fluid" src='{% static "images/team/team-member-01-370x250.jpg" %}' alt="">
                                                 <div class="social-networks">
                                                     <div class="inner">
                                                         <a target="_blank" href="#" class=" hint--bounce  hint--top hint--theme-two" aria-label="Facebook"><i class="fab fa-facebook"></i>
@@ -640,7 +634,7 @@
                                     <div class="grid-item">
                                         <div class="ht-team-member">
                                             <div class="team-image">
-                                                <img class="img-fluid" src="static/images/team/team-member-07-370x250.jpg" alt="">
+                                                <img class="img-fluid" src='{% static "images/team/team-member-07-370x250.jpg" %}' alt="">
                                                 <div class="social-networks">
                                                     <div class="inner">
                                                         <a target="_blank" href="#" class=" hint--bounce  hint--top hint--theme-two" aria-label="Facebook"><i class="fab fa-facebook"></i>
@@ -663,7 +657,7 @@
                                     <div class="grid-item">
                                         <div class="ht-team-member">
                                             <div class="team-image">
-                                                <img class="img-fluid" src="static/images/team/team-member-04-370x250.jpg" alt="">
+                                                <img class="img-fluid" src='{% static "images/team/team-member-04-370x250.jpg" %}' alt="">
                                                 <div class="social-networks">
                                                     <div class="inner">
                                                         <a target="_blank" href="#" class=" hint--bounce  hint--top hint--theme-two" aria-label="Facebook"><i class="fab fa-facebook"></i>
@@ -686,7 +680,7 @@
                                     <div class="grid-item">
                                         <div class="ht-team-member">
                                             <div class="team-image">
-                                                <img class="img-fluid" src="static/images/team/team-member-02-370x250.jpg" alt="">
+                                                <img class="img-fluid" src='{% static "images/team/team-member-02-370x250.jpg" %}' alt="">
                                                 <div class="social-networks">
                                                     <div class="inner">
                                                         <a target="_blank" href="#" class=" hint--bounce  hint--top hint--theme-two" aria-label="Facebook"><i class="fab fa-facebook"></i>
@@ -765,7 +759,7 @@
                                         <a href="#" class="projects-wrap style-01 wow move-up">
                                             <div class="projects-image-box">
                                                 <div class="projects-image">
-                                                    <img class="img-fluid" src="static/images/projects/case-study-01-480x298.jpg" alt="">
+                                                    <img class="img-fluid" src='{% static "images/projects/case-study-01-480x298.jpg" %}' alt="">
                                                 </div>
                                                 <div class="content">
                                                     <h6 class="heading">TheTimesTech-Smart Vision</h6>
@@ -787,7 +781,7 @@
                                         <a href="#" class="projects-wrap style-01 wow move-up">
                                             <div class="projects-image-box">
                                                 <div class="projects-image">
-                                                    <img class="img-fluid" src="static/images/projects/case-study-02-480x298.jpg" alt="">
+                                                    <img class="img-fluid" src='{% static "images/projects/case-study-02-480x298.jpg" %}' alt="">
                                                 </div>
                                                 <div class="content">
                                                     <h6 class="heading">Arden-Internal Networking</h6>
@@ -809,7 +803,7 @@
                                         <a href="#" class="projects-wrap style-01 wow move-up">
                                             <div class="projects-image-box">
                                                 <div class="projects-image">
-                                                    <img class="img-fluid" src="static/images/projects/case-study-03-480x298.jpg" alt="">
+                                                    <img class="img-fluid" src='{% static "images/projects/case-study-03-480x298.jpg" %}' alt="">
                                                 </div>
                                                 <div class="content">
                                                     <h6 class="heading">A Freeserve case study</h6>
@@ -831,7 +825,7 @@
                                         <a href="#" class="projects-wrap style-01 wow move-up">
                                             <div class="projects-image-box">
                                                 <div class="projects-image">
-                                                    <img class="img-fluid" src="static/images/projects/case-study-04-480x298.jpg" alt="">
+                                                    <img class="img-fluid" src='{% static "images/projects/case-study-04-480x298.jpg" %}' alt="">
                                                 </div>
                                                 <div class="content">
                                                     <h6 class="heading">Aqua – Research and Energy</h6>
@@ -877,7 +871,7 @@
 
                                                 <div class="testimonial-slider--info">
                                                     <div class="testimonial-slider__media">
-                                                        <img src="static/images/testimonial/mitech-testimonial-avata-02-90x90.jpg" class="img-fluid" alt="">
+                                                        <img src='{% static "images/testimonial/mitech-testimonial-avata-02-90x90.jpg" %}' class="img-fluid" alt="">
                                                     </div>
 
                                                     <div class="testimonial-slider__author">
@@ -904,7 +898,7 @@
 
                                                 <div class="testimonial-slider--info">
                                                     <div class="testimonial-slider__media">
-                                                        <img src="static/images/testimonial/mitech-testimonial-avata-03-90x90.jpg" class="img-fluid" alt="">
+                                                        <img src='{% static "images/testimonial/mitech-testimonial-avata-03-90x90.jpg" %}' class="img-fluid" alt="">
                                                     </div>
 
                                                     <div class="testimonial-slider__author">
@@ -931,7 +925,7 @@
 
                                                 <div class="testimonial-slider--info">
                                                     <div class="testimonial-slider__media">
-                                                        <img src="static/images/testimonial/mitech-testimonial-avata-04-90x90.jpg" class="img-fluid" alt="">
+                                                        <img src='{% static "images/testimonial/mitech-testimonial-avata-04-90x90.jpg" %}' class="img-fluid" alt="">
                                                     </div>
 
                                                     <div class="testimonial-slider__author">
@@ -958,7 +952,7 @@
 
                                                 <div class="testimonial-slider--info">
                                                     <div class="testimonial-slider__media">
-                                                        <img src="static/images/testimonial/mitech-testimonial-avata-01-90x90.jpg" class="img-fluid" alt="">
+                                                        <img src='{% static "images/testimonial/mitech-testimonial-avata-01-90x90.jpg" %}' class="img-fluid" alt="">
                                                     </div>
 
                                                     <div class="testimonial-slider__author">
@@ -1104,56 +1098,9 @@
         </a>
         <!--====================  End of scroll top  ====================-->
         <!-- Start Toolbar -->
-        <div class="demo-option-container">
-            <!-- Start Toolbar -->
-            <div class="aeroland__toolbar">
-                <div class="inner">
-                    <a class="quick-option hint--bounce hint--left hint--black primary-color-hover-important" href="#" aria-label="Quick Options">
-                        <i class="fal fa-project-diagram"></i>
-                    </a>
-                    <a class="hint--bounce hint--left hint--black primary-color-hover-important" target="_blank" href="https://thetimestech.net/contact-us/" aria-label="Support Center">
-                        <i class="fal fa-life-ring"></i>
-                    </a>
-                    <a class="hint--bounce hint--left hint--black primary-color-hover-important" target="_blank" href="#" aria-label="Get Quotation">
-                        <i class="fal fa-shopping-cart"></i>
-                    </a>
-                </div>
-            </div>
-            <!-- End Toolbar -->
-            <!-- Start Quick Link -->
-            <div class="demo-option-wrapper">
-                <div class="demo-panel-header">
-                    <div class="title">
-                        <h6 class="heading mt-30">TheTimesTech provides a complete IT Solution.</h6>
-                    </div>
-
-                    <div class="panel-btn mt-20">
-                        <a class="ht-btn ht-btn-md" href="#"><i class="far fa-file mr-2"></i> Book Appointment </a>
-                    </div>
-                </div>
-                <div class="demo-quick-option-list">
-                    <a class="link hint--bounce hint--black hint--top hint--dark" href="index-appointment.html" aria-label="Appointment">
-                        <img class="img-fluid" src="static/images/demo-images/home-01.jpg" alt="Images">
-                    </a>
-                    <a class="link hint--bounce hint--black hint--top hint--dark" href="index-infotechno.html" aria-label="Infotechno">
-                        <img class="img-fluid" src="static/images/demo-images/home-02.jpg" alt="Images">
-                    </a>
-                    <a class="link hint--bounce hint--black hint--top hint--dark" href="index-processing.html" aria-label="Processing">
-                        <img class="img-fluid" src="static/images/demo-images/home-03.jpg" alt="Images">
-                    </a>
-                    <a class="link hint--bounce hint--black hint--top hint--dark" href="index-services.html" aria-label="Services">
-                        <img class="img-fluid" src="static/images/demo-images/home-04.jpg" alt="Images">
-                    </a>
-                    <a class="link hint--bounce hint--black hint--top hint--dark" href="index-resolutions.html" aria-label="Resolutions">
-                        <img class="img-fluid" src="static/images/demo-images/home-05.jpg" alt="Images">
-                    </a>
-                    <a class="link hint--bounce hint--black hint--top hint--dark" href="index-cybersecurity.html" aria-label="Cybersecurity">
-                        <img class="img-fluid" src="static/images/demo-images/home-06.jpg" alt="Images">
-                    </a>
-                </div>
-            </div>
-            <!-- End Quick Link -->
-        </div>
+           <!-- Start Quick Link and Toolbar -->
+            {% include 'quick-sidebar.html' %}
+           <!-- End Quick Link and Toolbar -->
         <!-- End Toolbar -->
 
         <!--====================  mobile menu overlay ====================-->
@@ -1166,7 +1113,7 @@
                                 <!-- logo -->
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="static/images/logo/logo-dark.png" class="img-fluid" alt="">
+                                        <img src='{% static "images/logo/logo-dark.png" %}' class="img-fluid" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -1316,12 +1263,6 @@
         </div>
         <!--====================  End of mobile menu overlay  ====================-->
 
-
-
-
-
-
-
         <!--====================  search overlay ====================-->
         <div class="search-overlay" id="search-overlay">
 
@@ -1352,58 +1293,58 @@
         <!-- JS
     ============================================ -->
         <!-- Modernizer JS -->
-        <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src='{% static "js/vendor/modernizr-2.8.3.min.js" %}'></script>
 
         <!-- jQuery JS -->
-        <script src="static/js/vendor/jquery-3.3.1.min.js"></script>
+        <script src='{% static "js/vendor/jquery-3.3.1.min.js" %}'></script>
 
         <!-- Bootstrap JS -->
-        <script src="static/js/vendor/bootstrap.min.js"></script>
+        <script src='{% static "js/vendor/bootstrap.min.js" %}'></script>
 
         <!-- Swiper Slider JS -->
-        <script src="static/js/plugins/swiper.min.js"></script>
+        <script src='{% static "js/plugins/swiper.min.js" %}'></script>
 
         <!-- Light gallery JS -->
-        <script src="static/js/plugins/lightgallery.min.js"></script>
+        <script src='{% static "js/plugins/lightgallery.min.js" %}'></script>
 
         <!-- Waypoints JS -->
-        <script src="static/js/plugins/waypoints.min.js"></script>
+        <script src='{% static "js/plugins/waypoints.min.js" %}'></script>
 
         <!-- Counter down JS -->
-        <script src="static/js/plugins/countdown.min.js"></script>
+        <script src='{% static "js/plugins/countdown.min.js" %}'></script>
 
         <!-- Isotope JS -->
-        <script src="static/js/plugins/isotope.min.js"></script>
+        <script src='{% static "js/plugins/isotope.min.js" %}'></script>
 
         <!-- Masonry JS -->
-        <script src="static/js/plugins/masonry.min.js"></script>
+        <script src='{% static "js/plugins/masonry.min.js" %}'></script>
 
         <!-- ImagesLoaded JS -->
-        <script src="static/js/plugins/images-loaded.min.js"></script>
+        <script src='{% static "js/plugins/images-loaded.min.js" %}'></script>
 
         <!-- Wavify JS -->
-        <script src="static/js/plugins/wavify.js"></script>
+        <script src='{% static "js/plugins/wavify.js" %}'></script>
 
         <!-- jQuery Wavify JS -->
-        <script src="static/js/plugins/jquery.wavify.js"></script>
+        <script src='{% static "js/plugins/jquery.wavify.js" %}'></script>
 
         <!-- circle progress JS -->
-        <script src="static/js/plugins/circle-progress.min.js"></script>
+        <script src='{% static "js/plugins/circle-progress.min.js" %}'></script>
 
         <!-- counterup JS -->
-        <script src="static/js/plugins/counterup.min.js"></script>
+        <script src='{% static "js/plugins/counterup.min.js" %}'></script>
 
         <!-- wow JS -->
-        <script src="static/js/plugins/wow.min.js"></script>
+        <script src='{% static "js/plugins/wow.min.js" %}'></script>
 
         <!-- animation text JS -->
-        <script src="static/js/plugins/animation-text.min.js"></script>
+        <script src='{% static "js/plugins/animation-text.min.js" %}'></script>
 
         <!-- Vivus JS -->
-        <script src="static/js/plugins/vivus.min.js"></script>
+        <script src='{% static "js/plugins/vivus.min.js" %}'></script>
 
         <!-- Some plugins JS -->
-        <script src="static/js/plugins/some-plugins.js"></script>
+        <script src='{% static "js/plugins/some-plugins.js" %}'></script>
 
 
         <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
@@ -1413,7 +1354,7 @@
     -->
 
         <!-- Main JS -->
-        <script src="static/js/main.js"></script>
+        <script src='{% static "js/main.js" %}'></script>
 
 
 </body>
