@@ -1,4 +1,6 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from .models import enquiry
 
 # Create your views here.
 
@@ -12,7 +14,20 @@ def about(request):
 
 
 def contact(request):
-    return render(request, 'contact-us.html')
+    if request.method == 'POST':
+        name = request.POST['con_name']
+        email = request.POST['con_email']
+        phone = request.POST['con_contact']
+        subject = request.POST['con_subject']
+        description = request.POST['con_message']
+        status = False
+
+        result = enquiry.objects.create(name=name, email=email, contact=phone, subject=subject, description=description, status=status)
+        result.save()
+        return HttpResponseRedirect('/contact-us/')
+        #return render(request, 'contact-us.html', {"message": "Congrats, Data Submitted Successfully."})
+    else:
+        return render(request, 'contact-us.html')
 
 
 
