@@ -22,7 +22,8 @@ def contact(request):
         description = request.POST['con_message']
         status = False
 
-        result = enquiry.objects.create(name=name, email=email, contact=phone, subject=subject, description=description, status=status)
+        result = enquiry.objects.create(name=name, email=email, contact=phone, subject=subject, description=description,
+                                        status=status)
         result.save()
         return HttpResponseRedirect('/contact-us/')
         #return render(request, 'contact-us.html', {"message": "Congrats, Data Submitted Successfully."})
