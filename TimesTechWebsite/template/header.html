@@ -7,7 +7,7 @@
                     <div class="header position-relative">
                         <!-- brand logo -->
                         <div class="header__logo top-logo">
-                            <a href="http://127.0.0.1:8000/">
+                            <a href="{% url 'index' %}">
                                 <img src='{% static "images/logo/thetimes_logo.png" %}' class="img-fluid" alt="">
                             </a>
                         </div>
@@ -120,134 +120,61 @@
                                 <div class="header__navigation d-none d-xl-block">
                                     <nav class="navigation-menu navigation-menu--text_white">
                                         <ul>
+                                            <li>
+                                                <a href="{% url 'index' %}"><span>Home</span></a>
+                                            </li>
                                             <li class="has-children has-children--multilevel-submenu">
-                                                <a href="#"><span>Home</span></a>
+                                                <a href="#"><span>About Us</span></a>
                                                 <ul class="submenu">
-                                                    <li><a href="#"><span>Infotechno</span></a></li>
-                                                    <li><a href="#"><span>Processing</span></a></li>
-                                                    <li><a href="#"><span>Appointment</span></a></li>
-                                                    <li><a href="#"><span>Services</span></a></li>
-                                                    <li><a href="#"><span>Resolutions</span></a></li>
-                                                    <li><a href="#"><span>Data Science and AI</span></a></li>
+                                                    <li><a href="{% url 'our-history' %}"><span>Our history</span></a></li>
+                                                    <li><a href="{% url 'about-us' %}"><span>About TheTimes</span></a></li>
+                                                    <li><a href="{% url 'leadership' %}"><span>Leadership</span></a></li>
+                                                    <li><a href="{% url 'why-choose-us' %}"><span>Why choose us</span></a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-children has-children--multilevel-submenu">
-                                                <a href="#"><span>Company</span></a>
+                                                <a href="#"><span>Services</span></a>
                                                 <ul class="submenu">
-                                                    <li class="has-children">
-                                                        <a href="#"><span>About us</span></a>
+                                                    <li><a href="#"><span>App Development</span></a>
                                                         <ul class="submenu">
-                                                            <li><a href="{% url 'about-us' %}"><span>About Us</span></a></li>
-                                                            <li class="has-children">
-                                                                <a href="#"><span>Submenu Level Two</span></a>
-                                                                <ul class="submenu">
-                                                                    <li><a href="#"><span>Submenu Level Three</span></a></li>
-                                                                    <li><a href="#"><span>Submenu Level Three</span></a></li>
-                                                                    <li><a href="#"><span>Submenu Level Three</span></a></li>
-                                                                </ul>
-                                                            </li>
+                                                            <li><a href="#"><span>Android</span></a></li>
+                                                            <li><a href="#"><span>IOS</span></a></li>
+                                                            <li><a href="#"><span>Cross Platform</span></a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="{% url 'contact-us' %}"><span>Contact us</span></a></li>
-                                                    <li><a href="#"><span>Leadership</span></a></li>
-                                                    <li><a href="#"><span>Why choose us</span></a></li>
-                                                    <li><a href="#"><span>Our history</span></a></li>
-                                                    <li><a href="#"><span>FAQs</span></a></li>
-                                                    <li><a href="#"><span>Careers</span></a></li>
-                                                    <li><a href="#"><span>Pricing plans</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-children has-children--multilevel-submenu">
-                                                <a href="#"><span>IT solutions</span></a>
-                                                <ul class="submenu">
-                                                    <li><a href="#"><span>IT Services</span></a></li>
-                                                    <li><a href="#"><span>Managed IT Services</span></a></li>
-                                                    <li><a href="#"><span>Industries</span></a></li>
-                                                    <li><a href="#"><span>Business solution</span></a></li>
-                                                    <li><a href="#"><span>IT Services Details</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-children">
-                                                <a href="#"><span>Elements</span></a>
-                                                <!-- mega menu -->
-                                                <ul class="megamenu megamenu--mega">
-                                                    <li>
-                                                        <h2 class="page-list-title">ELEMENT GROUP 01</h2>
-                                                        <ul>
-                                                            <li><a href="#"><span>Accordions & Toggles</span></a></li>
-                                                            <li><a href="#"><span>Box Icon</span></a></li>
-                                                            <li><a href="#"><span>Box Image</span></a></li>
-                                                            <li><a href="#"><span>Box Large Image</span></a></li>
-                                                            <li><a href="#"><span>Buttons</span></a></li>
-                                                            <li><a href="#"><span>Call to action</span></a></li>
-                                                            <li><a href="#"><span>Client Logo</span></a></li>
-                                                            <li><a href="#"><span>Countdown</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <h2 class="page-list-title">ELEMENT GROUP 02</h2>
-                                                        <ul>
-                                                            <li><a href="#"><span>Counters</span></a></li>
-                                                            <li><a href="#"><span>Dividers</span></a></li>
-                                                            <li><a href="#"><span>Flexible image slider</span></a></li>
-                                                            <li><a href="#"><span>Google Map</span></a></li>
-                                                            <li><a href="#"><span>Gradation</span></a></li>
-                                                            <li><a href="#"><span>Instagram</span></a></li>
-                                                            <li><a href="#"><span>Lists</span></a></li>
-                                                            <li><a href="#"><span>Message box</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <h2 class="page-list-title">ELEMENT GROUP 03</h2>
-                                                        <ul>
-                                                            <li><a href="#"><span>Popup Video</span></a></li>
-                                                            <li><a href="#"><span>Pricing Box</span></a></li>
-                                                            <li><a href="#"><span>Progress Bar</span></a></li>
-                                                            <li><a href="#"><span>Progress Circle</span></a></li>
-                                                            <li><a href="#"><span>Rows & Columns</span></a></li>
-                                                            <li><a href="#"><span>Social Networks</span></a></li>
-                                                            <li><a href="#"><span>Tabs</span></a></li>
-                                                            <li><a href="#"><span>Team member</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <h2 class="page-list-title">ELEMENT GROUP 04</h2>
-                                                        <ul>
-                                                            <li><a href="#"><span>Testimonials</span></a></li>
-                                                            <li><a href="#"><span>Timeline</span></a></li>
-                                                            <li><a href="#"><span>Carousel Sliders</span></a></li>
-                                                            <li><a href="#"><span>Typed Text</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-children has-children--multilevel-submenu">
-                                                <a href="#"><span>Case Studies</span></a>
-                                                <!-- multilevel submenu -->
-                                                <ul class="submenu">
-                                                    <li><a href="#"><span>Case Studies 01</span></a></li>
-                                                    <li><a href="#"><span>Case Studies 02</span></a></li>
-                                                    <li><a href="#"><span>Single Layout</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-children has-children--multilevel-submenu">
-                                                <a href="#"><span>Blog</span></a>
-                                                <!-- multilevel submenu -->
-                                                <ul class="submenu">
-                                                    <li><a href="#"><span>List Large Image</span></a></li>
-                                                    <li><a href="#"><span>Left Large Image</span></a></li>
-                                                    <li><a href="#"><span>Grid Classic</span></a></li>
-                                                    <li><a href="#"><span>Grid Masonry</span></a></li>
-                                                    <li class="has-children">
-                                                        <a href="#"><span>Single Layouts</span></a>
+                                                    <li><a href="#"><span>Web Development</span></a>
                                                         <ul class="submenu">
-                                                            <li><a href="#"><span>Left Sidebar</span></a></li>
-                                                            <li><a href="#"><span>Right Sidebar</span></a></li>
-                                                            <li><a href="#"><span>No Sidebar</span></a></li>
+                                                            <li><a href="#"><span>Django with Python</span></a></li>
+                                                            <li><a href="#"><span>Laravel with PHP</span></a></li>
+                                                            <li><a href="#"><span>ASP.net with C#</span></a></li>
+                                                            <li><a href="#"><span>WordPress (CMS)</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#"><span>Graphics</span></a>
+                                                        <ul class="submenu">
+                                                            <li><a href="#"><span>UI/UX</span></a></li>
+                                                            <li><a href="#"><span>Logo Designing</span></a></li>
+                                                            <li><a href="#"><span>Theme Designing</span></a></li>
+                                                            <li><a href="#"><span>Broucher Designing</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#"><span>Digital Marketing</span></a>
+                                                        <ul class="submenu">
+                                                            <li><a href="#"><span>SEO</span></a></li>
+                                                            <li><a href="#"><span>SMO</span></a></li>
+                                                            <li><a href="#"><span>SEM</span></a></li>
+                                                            <li><a href="#"><span>SMM</span></a></li>
+                                                            <li><a href="#"><span>PPC</span></a></li>
+                                                            <li><a href="#"><span>Lead Generation</span></a></li>
+                                                            <li><a href="#"><span>Email Marketing</span></a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </li>
+                                            <li><a href="#"><span>Projects</span></a></li>
+                                            <li><a href="#"><span>Blog</span></a></li>
+                                            <li><a href="#"><span>Career</span></a></li>
+                                            <li><a href="{% url 'contact-us' %}"><span>Contact us</span></a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -266,5 +193,4 @@
                 </div>
             </div>
         </div>
-
     </div>

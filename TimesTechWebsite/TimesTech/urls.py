@@ -18,7 +18,10 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.index, name='index'),
     path('about-us/', views.about, name='about-us'),
-    path('contact-us/', views.contact, name='contact-us')
+    path('contact-us/', views.contact, name='contact-us'),
+    path('our-history/', views.history, name='our-history'),
+    path('leadership/', views.leadership, name='leadership'),
+    path('why-choose-us/', views.why_choose_us, name='why-choose-us')
 ]

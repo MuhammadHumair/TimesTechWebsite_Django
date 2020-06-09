@@ -31,6 +31,15 @@ def contact(request):
         return render(request, 'contact-us.html')
 
 
+def history(request):
+    return render(request, 'our-history.html')
 
+
+def leadership(request):
+    return render(request, 'leadership.html')
+
+
+def why_choose_us(request):
+    return render(request, 'why-choose-us.html')
 
 

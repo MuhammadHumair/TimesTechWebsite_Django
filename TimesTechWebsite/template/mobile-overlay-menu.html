@@ -1,0 +1,95 @@
+{% load static %}
+
+<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-overlay__inner">
+                <div class="mobile-menu-overlay__header">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-8">
+                                <!-- logo -->
+                                <div class="logo">
+                                    <a href="{% url 'index' %}">
+                                        <img src='{% static "images/logo/thetimes_logo.png" %}' class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-4">
+                                <!-- mobile menu content -->
+                                <div class="mobile-menu-content text-right">
+                                    <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu-overlay__body">
+                    <nav class="offcanvas-navigation">
+                        <ul>
+                            <li>
+                                <a href="{% url 'index' %}">Home</a>
+                            </li>
+                            <li class="has-children">
+                                <a href="javascript:void(0)">About Us</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{% url 'our-history' %}"><span>Our history</span></a></li>
+                                    <li><a href="{% url 'about-us' %}"><span>About TheTimes</span></a></li>
+                                    <li><a href="{% url 'leadership' %}"><span>Leadership</span></a></li>
+                                    <li><a href="{% url 'why-choose-us' %}"><span>Why choose us</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="javascript:void(0)">Services</a>
+                                <ul class="submenu">
+                                    <li><a href="#"><span>App Development</span></a>
+                                        <ul class="submenu">
+                                            <li><a href="#"><span>Android</span></a></li>
+                                            <li><a href="#"><span>IOS</span></a></li>
+                                            <li><a href="#"><span>Cross Platform</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><span>Web Development</span></a>
+                                        <ul class="submenu">
+                                            <li><a href="#"><span>Django with Python</span></a></li>
+                                            <li><a href="#"><span>Laravel with PHP</span></a></li>
+                                            <li><a href="#"><span>ASP.net with C#</span></a></li>
+                                            <li><a href="#"><span>WordPress</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><span>Graphics</span></a>
+                                        <ul class="submenu">
+                                            <li><a href="#"><span>UI/UX</span></a></li>
+                                            <li><a href="#"><span>Logo Designing</span></a></li>
+                                            <li><a href="#"><span>Theme Designing</span></a></li>
+                                            <li><a href="#"><span>Broucher Designing</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><span>Digital Marketing</span></a>
+                                        <ul class="submenu">
+                                            <li><a href="#"><span>SEO</span></a></li>
+                                            <li><a href="#"><span>SMO</span></a></li>
+                                            <li><a href="#"><span>SEM</span></a></li>
+                                            <li><a href="#"><span>SMM</span></a></li>
+                                            <li><a href="#"><span>PPC</span></a></li>
+                                            <li><a href="#"><span>Lead Generation</span></a></li>
+                                            <li><a href="#"><span>Email Marketing</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Career</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'contact-us' %}">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
