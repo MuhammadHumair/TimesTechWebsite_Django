@@ -43,3 +43,7 @@ def why_choose_us(request):
     return render(request, 'why-choose-us.html')
 
 
+def career(request):
+    return render(request, 'career.html')
+
+
