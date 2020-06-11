@@ -47,3 +47,6 @@ def career(request):
     return render(request, 'career.html')
 
 
+def projects(request):
+    return render(request, 'projects.html')
+

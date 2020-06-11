@@ -24,5 +24,6 @@ urlpatterns = [
     path('our-history/', views.history, name='our-history'),
     path('leadership/', views.leadership, name='leadership'),
     path('why-choose-us/', views.why_choose_us, name='why-choose-us'),
-    path('career/', views.career, name='career')
+    path('career/', views.career, name='career'),
+    path('projects/', views.projects, name='projects')
 ]
