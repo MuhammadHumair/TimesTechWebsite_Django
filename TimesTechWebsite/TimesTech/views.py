@@ -1,6 +1,6 @@
-from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import enquiry
+from django.contrib import messages
 
 # Create your views here.
 
@@ -25,8 +25,8 @@ def contact(request):
         result = enquiry.objects.create(name=name, email=email, contact=phone, subject=subject, description=description,
                                         status=status)
         result.save()
-        return HttpResponseRedirect('/contact-us/')
-        #return render(request, 'contact-us.html', {"message": "Congrats, Data Submitted Successfully."})
+        messages.success(request, "Your message successfully sent!")
+        return redirect('contact-us')
     else:
         return render(request, 'contact-us.html')
 

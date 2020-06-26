@@ -28,6 +28,17 @@
 
     {% include 'preloader.html' %}
 
+    {% for message in messages %}
+                                    {% if message %}
+                                        <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                                            <strong>{{message.tags.title}}!</strong> {{message}}
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+
     <!--====================  header area ====================-->
     {% include 'header.html' %}
     <!--====================  End of header area  ====================-->
@@ -66,7 +77,7 @@
 
                         <div class="col-lg-6 col-lg-6">
                             <div class="contact-form-wrap">
-                                <form id="contact-form" action="{% url 'contact-us' %}" method="post">
+                                <form action="{% url 'contact-us' %}" method="post">
                                     {% csrf_token %}
                                     <div class="contact-form">
                                         <div class="contact-input">
@@ -74,7 +85,7 @@
                                                 <input name="con_name" type="text" placeholder="Name *">
                                             </div>
                                             <div class="contact-inner">
-                                                <input name="con_email" type="email" placeholder="Email *">
+                                                <input name="con_email" type="email" placeholder="Email *">        
                                             </div>
                                         </div>
                                         <div class="contact-input">
@@ -82,15 +93,14 @@
                                                 <input name="con_contact" type="text" placeholder="Contact *">
                                             </div>
                                             <div class="contact-inner">
-                                                <input name="con_subject" type="text" placeholder="Subject *">
+                                                <input name="con_subject" type="text" placeholder="Subject *">        
                                             </div>
                                         </div>
                                         <div class="contact-inner contact-message">
                                             <textarea name="con_message" placeholder="Please describe what you need."></textarea>
                                         </div>
                                         <div class="submit-btn mt-20">
-                                            <button class="ht-btn ht-btn-md" type="submit">Send message</button>
-                                            <p class="form-messege text-success"></p>
+                                            <input class="ht-btn ht-btn-md" type="submit" value="Send Message" />
                                         </div>
                                     </div>
                                 </form>
@@ -268,7 +278,7 @@
 
         <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
 
-        <script src='{% static "js/plugins/plugins.min.js" %}'></script>
+        <!-- <script src='{% static "js/plugins/plugins.min.js" %}'></script> -->
 
         <!-- Main JS -->
         <script src='{% static "js/main.js" %}'></script>
